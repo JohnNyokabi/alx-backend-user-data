@@ -7,6 +7,7 @@ from models.user import User
 
 
 class BasicAuth(Auth):
+    """Authentication class that inherits from Auth class"""
     def extract_base64_authorization_header(self,
                                             authorization_header: str
                                             ) -> str:
